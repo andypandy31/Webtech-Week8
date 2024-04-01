@@ -5,9 +5,11 @@
     </head>
     <body>
         <script>
-            for (property in window){
-                if (property) {console.log(property)}
+            var out = document.getElementById ("output") ;
+            for (i =1; i <2000; i ++) {
+                out.innerHTML += i+ "";
             }
+            window.scrollBy (0, 100) ;
         </script>
     </body>
 </html>
