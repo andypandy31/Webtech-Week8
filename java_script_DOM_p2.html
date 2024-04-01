@@ -1,17 +1,22 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title> SET08101 - Interacting with the DOM </title>
+        <title>SET08101 - Interacting with the DOM</title>
     </head>
     <body>
-        <p><a href ="#" onClick ="addMessage();"> Click Me </a> </p>
-        <h1> OUTPUT : </h1>
-        <div id ="output"> aaaa </div>
+        <p><a href ="#" onClick ="addMessage();">Click Me</a></p>
+        <h1>OUTPUT :</h1>
+        <div id ="output">one</div>
 
         <script>
-        function addMessage(){
-        document.getElementById("output").innerHTML = "<p>HELLO WORLD<p>"
-        }
+            var consis = 1
+            function addMessage(){
+                document.getElementById("output").innerHTML += "<p>two<p>"
+                consis = consis + 1
+                if(consis === 2)
+                    document.getElementById("output").innerHTML += "<p>three<p>"
+                    
+            }
         </script>
     </body>
 </html>
